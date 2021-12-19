@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <Windows.h>
 #include "SnakeMovement.h";
@@ -42,7 +42,10 @@ int main()
 		if (dir == "LEFT" || dir == "RIGHT")
 			Sleep(speed);
 		else
-			Sleep(speed * 1.8);
+			Sleep(speed * 2);
 	}
 	cout << "\n  GAME OVER\n";
+	string name;
+	cout << "ENTER NAME ";
+	cin >> name;
 }
